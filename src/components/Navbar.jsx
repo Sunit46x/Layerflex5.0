@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectTotalQantity, setOpenCart } from "../app/CartSlice";
 
 const Navbar = () => {
-  const [navState, setNavState] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
   const dispatch = useDispatch();
   const totalQTY = useSelector(selectTotalQantity);
 
@@ -23,9 +23,9 @@ const Navbar = () => {
 
   const onNavScroll = () => {
     if (window.scrollY > 30) {
-      setNavState(true);
+      setShowNavbar(false); // Hide when scrolling down
     } else {
-      setNavState(false);
+      setShowNavbar(true); // Show only at the top
     }
   };
 
@@ -34,12 +34,15 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", onNavScroll);
     };
-  });
+  }, []);
 
   return (
     <>
-      {/* Restored the navbar's background color while keeping it fixed at the top */}
-      <header className="fixed top-0 left-0 right-0 h-[9vh] flex items-center justify-center opacity-100 z-[200] bg-transparent">
+      <header
+        className={`fixed top-0 left-0 right-0 h-[9vh] flex items-center justify-center z-[200] transition-all duration-300 ${
+          showNavbar ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
         <nav className="flex items-center justify-between nike-container">
           {/* Logo */}
           <div className="flex items-center">
