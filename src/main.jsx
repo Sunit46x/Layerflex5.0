@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Router>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/category" element={<CategoryPage />} />
+          <Route path="/category/:categoryName" element={<CategoryPage />} />
         </Routes>
       </Router>
     </Provider>
