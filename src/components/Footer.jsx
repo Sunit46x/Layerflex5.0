@@ -14,7 +14,7 @@ const Footer = ({ footerAPI: { titles, links } }) => {
                     key={j}
                     className="text-sm sm:text-xs cursor-pointer hover:text-slate-100 transition-all"
                   >
-                    {link.link}
+                    <a href={link.url || "#"}>{link.link}</a>
                   </li>
                 ))}
               </ul>

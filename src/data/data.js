@@ -9,18 +9,18 @@ import psale1 from "../assets/anime/2.png";
 import psale2 from "../assets/anime/1.png";
 import psale3 from "../assets/anime/15.png";
 
-import product7 from "../assets/anime/2.png";
-import product1 from "../assets/video/resized_image.png";
-import product2 from "../assets/video/resized_image.png";
+import product7 from "../assets/anime/harry.png";
+import product1 from "../assets/anime/spiderman.png";
+import product2 from "../assets/anime/superrliers.png";
 import product3 from "../assets/anime/14.png";
-import product4 from "../assets/anime/15.png";
+import product4 from "../assets/anime/joke.png";
 import product5 from "../assets/anime/16.png";
 import product6 from "../assets/anime/17.png";
-import product8 from "../assets/anime/18.png";
+import product8 from "../assets/anime/8.png";
 import product9 from "../assets/anime/19.png";
 import product10 from "../assets/anime/6.png";
 import product11 from "../assets/anime/7.png";
-import product12 from "../assets/anime/8.png";
+import product12 from "../assets/anime/Superman.png";
 
 
 
@@ -117,8 +117,8 @@ const topratesales = {
     },
     {
       id: "0M0x2",
-      title: "Nike Air Force Green",
-      text: "MEN Running Shoes",
+      title: "Mileena",
+      text: "Mileenaa from Mortal Kombat",
       rating: "5+",
       btn: "Buy Now",
       img: product2,
@@ -128,8 +128,8 @@ const topratesales = {
     },
     {
       id: "0M0x3",
-      title: "Nike Addapt BB Rose",
-      text: "MEN Running Shoes",
+      title: "Harley Quinn",
+      text: "Harley spreads chaos.",
       rating: "5+",
       btn: "Buy Now",
       img: product3,
@@ -139,8 +139,8 @@ const topratesales = {
     },
     {
       id: "0M0x4",
-      title: "Nike Air Premium",
-      text: "MEN Running Shoes",
+      title: "Joker",
+      text: "The Joker supervillain",
       rating: "5+",
       btn: "Buy Now",
       img: product4,
@@ -150,8 +150,8 @@ const topratesales = {
     },
     {
       id: "0M0x5",
-      title: "Nike Adapt BB Pro",
-      text: "MEN Running Shoes",
+      title: "Colossal & Armored Titan",
+      text: "Colossal dominates explosively.",
       rating: "5+",
       btn: "Buy Now",
       img: product5,
@@ -161,8 +161,8 @@ const topratesales = {
     },
     {
       id: "0M0x6",
-      title: "Air Jordan PR3",
-      text: "MEN Running Shoes",
+      title: "Ngato",
+      text: "Peace through pain.",
       rating: "5+",
       btn: "Buy Now",
       img: product6,
@@ -172,8 +172,8 @@ const topratesales = {
     },
     {
       id: "0M0x7",
-      title: "Nike Multi Smart Shoe",
-      text: "MEN Running Shoes",
+      title: "Spiderman",
+      text: "Friendly Neighborhood Hero",
       rating: "5+",
       btn: "Buy Now",
       img: product1,
@@ -183,8 +183,8 @@ const topratesales = {
     },
     {
       id: "0M0x8",
-      title: "Nike Jordan Air Max",
-      text: "MEN Running Shoes",
+      title: "Scorpion",
+      text: "Scorpion seeks vengeance.",
       rating: "5+",
       btn: "Buy Now",
       img: product9,
@@ -194,8 +194,8 @@ const topratesales = {
     },
     {
       id: "0M0x9",
-      title: "Nike Old Max-x",
-      text: "MEN Running Shoes",
+      title: "Iron Man",
+      text: "Iron Man Edition",
       rating: "5+",
       btn: "Buy Now",
       img: product10,
@@ -205,8 +205,8 @@ const topratesales = {
     },
     {
       id: "0M0x10",
-      title: "Nike Lime Jordan 11",
-      text: "MEN Running Shoes",
+      title: "Superman",
+      text: "superman Edition",
       rating: "5+",
       btn: "Buy Now",
       img: product12,
@@ -216,8 +216,8 @@ const topratesales = {
     },
     {
       id: "0M0x11",
-      title: "Nike Air Black Max",
-      text: "MEN Running Shoes",
+      title: "Spider-Man Venom",
+      text: "Darkly Enhanced Hero",
       rating: "5+",
       btn: "Buy Now",
       img: product11,
@@ -227,8 +227,8 @@ const topratesales = {
     },
     {
       id: "0M0x12",
-      title: "Nike Zoom Max",
-      text: "MEN Running Shoes",
+      title: "The Flash",
+      text: "Speed Force Hero",
       rating: "5+",
       btn: "Buy Now",
       img: product8,
@@ -351,8 +351,6 @@ const footerAPI = {
       { link: "DC Characters" },
       { link: "Cartoon & Anime" },
       { link: "Gaming Assets" },
-      { link: "Architecture Models" },
-      { link: "Collectibles & Figurines" },
     ],
 
     // Company Info
