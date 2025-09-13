@@ -51,7 +51,7 @@ const Footer = ({ footerAPI: { titles, links } }) => {
               <li><a href="#" className="text-2xl hover:text-gray-300"><FaFacebook /></a></li>
               <li><a href="#" className="text-2xl hover:text-gray-300"><FaInstagram /></a></li>
               <li><a href="#" className="text-2xl hover:text-gray-300"><FaTwitter /></a></li>
-              <li><a href="#" className="text-2xl hover:text-gray-300"><FaLinkedin /></a></li>
+              {/* <li><a href="#" className="text-2xl hover:text-gray-300"><FaLinkedin /></a></li> */}
             </ul>
             <form className="mt-4">
               <label htmlFor="email" className="block text-lg mb-2">Subscribe to our newsletter:</label>

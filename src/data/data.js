@@ -161,7 +161,7 @@ const topratesales = {
     },
     {
       id: "0M0x6",
-      title: "Ngato",
+      title: "Nagato",
       text: "Peace through pain.",
       rating: "5+",
       btn: "Buy Now",
@@ -358,8 +358,8 @@ const footerAPI = {
       { link: "Layer Flex Shop Pvt. Ltd." },
       { link: "Pune Maharastra " },
       { link: "layerflex123@gmail.com" },
-      { link: "Phone: +91 98765 43210" },
-      { link: "Business Hours: Mon-Fri (9AM - 7PM)" },
+      { link: "Phone: +91 83906 46565" },
+      { link: "Business Hours: Mon-Sun " },
     ],
   ],
 };
