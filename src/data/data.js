@@ -20,7 +20,7 @@ import product8 from "../assets/anime/8.png";
 import product9 from "../assets/anime/19.png";
 import product10 from "../assets/anime/6.png";
 import product11 from "../assets/anime/7.png";
-import product12 from "../assets/anime/Superman.png";
+import product12 from "../assets/anime/superman.png";
 
 
 
