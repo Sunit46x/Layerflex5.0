@@ -358,7 +358,7 @@ const footerAPI = {
       { link: "Layer Flex Shop Pvt. Ltd." },
       { link: "Pune Maharastra " },
       { link: "layerflex123@gmail.com" },
-      { link: "Phone: +91 83906 46565" },
+      { link: "Phone: +91 83906 46565 , +91 86000 62444" },
       { link: "Business Hours: Mon-Sun " },
     ],
   ],
