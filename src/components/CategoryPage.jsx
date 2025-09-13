@@ -11,14 +11,6 @@ import hawkeye from "../assets/Marvel/Hawkeye model.jpg";
 import blackPanther from "../assets/Marvel/black-panther-civil-war-armor-helmet-3d-printable-model-print-file-stl-do3d-printed-06.jpg";
 import doctorStrange from "../assets/Marvel/Doctor Strange.jpg";
 
-import batman from "../assets/DC/batman-kit.jpg";
-import superman from "../assets/DC/superman.jpg";
-import wonderwoman from "../assets/DC/wonderwoman.jpg";
-import flash from "../assets/DC/flash.jpg";
-import aquaman from "../assets/DC/aquaman.jpg";
-import cyborg from "../assets/DC/cyborg.jpg";
-import greenlantern from "../assets/DC/greenlantern.jpg";
-import shazam from "../assets/DC/shazam.jpg";
 
 
 
@@ -36,19 +28,7 @@ const categories = [
 			{ id: 8, title: "Doctor Strange", img: doctorStrange },
 		],
 	},
-	{
-		 title: "DC Characters",
-  items: [
-    { id: 1, title: "Batman", img: batman },
-    { id: 2, title: "Superman", img: superman },
-    { id: 3, title: "Wonder Woman", img: wonderwoman },
-    { id: 4, title: "Flash", img: flash },
-    { id: 5, title: "Aquaman", img: aquaman },
-    { id: 6, title: "Cyborg", img: cyborg },
-    { id: 7, title: "Green Lantern", img: greenlantern },
-    { id: 8, title: "Shazam", img: shazam },
-  ],
-	},
+	
 	{
 		title: "Cartoon & Anime",
 		items: [
