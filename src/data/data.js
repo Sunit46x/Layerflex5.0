@@ -106,8 +106,8 @@ const topratesales = {
   items: [
     {
       id: "0M0x1",
-      title: "Nike Air Low Premium",
-      text: "MEN Running Shoes",
+      title: "Harry & Hagrid ",
+      text: "The Keeper of  Hogwarts",
       rating: "5+",
       btn: "Buy Now",
       img: product7,
