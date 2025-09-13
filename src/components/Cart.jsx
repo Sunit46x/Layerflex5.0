@@ -39,38 +39,46 @@ const Cart = () => {
     }
 
     // Build WhatsApp message
-    let message = "🛒 *New Order*%0A%0A";
+let message = "🛍️ *New Order Received!* 🛍️%0A%0A";
+message += "👤 *Customer Details:*%0A";
+// Optionally, add customer info here if available
+// message += `Name: ${customerName}%0A`;
+// message += `Email: ${customerEmail}%0A%0A`;
 
-    cartItems.forEach((item, index) => {
-      message += `*${index + 1}. ${item.title || item.name}*%0A`;
-      message += `💵 Price: $${item.price}%0A`;
-      message += `🔢 Qty: ${item.cartQuantity}%0A`;
-      message += "%0A";
-    });
+message += "🛒 *Order Details:*%0A%0A";
 
-    message += `--------------------%0A`;
-    message += `📦 *Total Quantity*: ${totalQTY}%0A`;
-    message += `💰 *Total Amount*: $${totalAmount}%0A`;
+cartItems.forEach((item, index) => {
+  message += `*${index + 1}. ${item.title || item.name}*%0A`;
+  message += `  🔹 Price: $${item.price}%0A`;
+  message += `  🔹 Quantity: ${item.cartQuantity}%0A`;
+  message += `  🔹 Subtotal: $${item.price * item.cartQuantity}%0A`;
+  message += "--------------------%0A";
+});
 
-    // Fixed WhatsApp number
-    const phoneNumber = "918390646565";
+message += `%0A📦 *Total Quantity*: ${totalQTY}%0A`;
+message += `💰 *Total Amount*: $${totalAmount}%0A`;
+message += `%0A✨ Thank you for your order! ✨%0A`;
+message += `🛒 We will process your order soon.`;
 
-    // Open WhatsApp with one single message
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+// Fixed WhatsApp number
+const phoneNumber = "918390646565";
+
+// Open WhatsApp with one single message
+window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
 
   return (
     <>
       <div
         className={`fixed top-0 left-0 right-0 bottom-0 blur-effect-theme duration-500 w-full h-screen opacity-100 z-[250] ${ifCartState
-            ? "opacity-100 visible translate-x-0"
-            : "opacity-0 invisible translate-x-8"
+          ? "opacity-100 visible translate-x-0"
+          : "opacity-0 invisible translate-x-8"
           }`}
       >
         <div
           className={`blur-effect-theme duration-500 h-screen max-w-xl w-full absolute right-0 ${ifCartState
-              ? "opacity-100 visible translate-x-0"
-              : "opacity-0 invisible translate-x-8"
+            ? "opacity-100 visible translate-x-0"
+            : "opacity-0 invisible translate-x-8"
             }`}
         >
           <CartCount
