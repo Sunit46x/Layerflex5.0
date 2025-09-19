@@ -1,5 +1,4 @@
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import { Link } from "react-router-dom"; // ✅ Import Link
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = ({ footerAPI: { titles, links } }) => {
   return (
@@ -24,12 +23,7 @@ const Footer = ({ footerAPI: { titles, links } }) => {
                   key={j}
                   className="text-lg sm:text-md cursor-pointer hover:text-gray-300 transition-all"
                 >
-                  {/* ✅ Use Link instead of <a> */}
-                  <Link
-                    to={`/category/${link.link.replace(/\s+/g, "-").toLowerCase()}`}
-                  >
-                    {link.link}
-                  </Link>
+                  <a href={`/category/${link.link.replace(/\s+/g, '-').toLowerCase()}`}>{link.link}</a>
                 </li>
               ))}
             </ul>
@@ -57,6 +51,7 @@ const Footer = ({ footerAPI: { titles, links } }) => {
               <li><a href="#" className="text-2xl hover:text-gray-300"><FaFacebook /></a></li>
               <li><a href="#" className="text-2xl hover:text-gray-300"><FaInstagram /></a></li>
               <li><a href="#" className="text-2xl hover:text-gray-300"><FaTwitter /></a></li>
+              {/* <li><a href="#" className="text-2xl hover:text-gray-300"><FaLinkedin /></a></li> */}
             </ul>
             <form className="mt-4">
               <label htmlFor="email" className="block text-lg mb-2">Subscribe to our newsletter:</label>
