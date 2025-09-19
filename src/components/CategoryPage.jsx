@@ -1,5 +1,7 @@
 import React from "react";
 import ShoeCard from "../utils/ShoeCard";
+import { useParams } from 'react-router-dom';
+import { categories } from '../data/categories'; // Assuming you create this file
 
 // ✅ Import Marvel images
 import ironMan from "../assets/Marvel/iron man DID3.jpg";
